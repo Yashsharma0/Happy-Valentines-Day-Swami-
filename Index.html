@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Swami ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #ffdde1;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .page {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .active { display: flex; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 { font-family: 'Dancing Script', cursive; color: #d6334d; font-size: 2.8rem; margin-bottom: 20px; }
+        h2 { font-family: 'Playfair Display', serif; color: #4a4a4a; font-size: 1.6rem; margin-bottom: 30px; }
+        
+        .btn {
+            padding: 12px 30px;
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .buttons-container { display: flex; gap: 15px; align-items: center; justify-content: center; min-height: 150px; }
+
+        .paper {
+            background-color: #fdfbf7;
+            width: 100%;
+            max-width: 350px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: left;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .paper-content { font-family: 'Playfair Display', serif; font-size: 0.9rem; color: #333; line-height: 1.5; }
+        
+        .video-container {
+            width: 100%;
+            max-width: 350px;
+            height: 220px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .doodle { position: absolute; font-size: 2rem; opacity: 0.5; animation: float 3s infinite ease-in-out; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+    </style>
+</head>
+<body>
+
+    <div id="page1" class="page active">
+        <h1>Pranam Swami 🙏🏼</h1>
+        <p>tohfuu Kabul karey 🙏🏼😈</p>
+        <button class="btn" onclick="nextPage(1)">Next &rarr;</button>
+    </div>
+
+    <div id="page2" class="page">
+        <h2>Charmi, will You Be My Valentine? 🌹</h2>
+        <p style="font-size: 0.8rem;">(yes karna hi hoga huhuhahahaha😈😈😈)</p>
+        <div class="buttons-container">
+            <button id="yesBtn" class="btn" onclick="celebrateAndNext()">Yes! 😈🙏🏼</button>
+            <button id="noBtn" class="btn" onclick="shrinkNo()" style="background: #999;">No 😑</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <h2 style="font-size: 1.2rem; margin-bottom: 10px;">A Letter For You 💌</h2>
+        <div class="paper">
+            <div class="paper-content">
+                <p><strong>Swaamiiii🙏🏼🙏🏼</strong></p><br>
+                <p>ki hall h !? Bohot confusion ho rahi h kya kya likhu .😭😭 bohot kuch h but express karna nai aara 😭😭. Like perfect ho mast cute sii panda type 🐼 i mean meri Panda 😈😈 or han photos send kar diya kro na 🥲pleejjjjjjj.</p><br>
+                <p>So main point pe aao ab no more faltu baat huh. one more thing exam aa rahe h ache se padhooo 12th me bhi jana h. Kala tika bhi lagaya krooooo (f u Gandi Nazar walo .👽)</p><br>
+                <p>Areyy like bohot mast ho cute si soft toy Type huhuhahahaha. And vo saree wali photo me kya mast lag rahi thi ese phots send karti raha kro and beech beech me gayab mat hua kro ,Oxygen nai ati Swamiiii Youee Are the BEST 🙏🏼🙏🏼🙏🏼🙏🏼</p><br>
+                <p style="color: #d6334d; font-weight: bold;">Loveeeeee Youuuuuu Swaamiii🙏🏼🙏🏼🙏🏼😈 ... And HAPPY VALENTINES DAY 🎀✨️</p>
+            </div>
+        </div>
+        <button class="btn" onclick="nextPage(3)">Next &rarr;</button>
+    </div>
+
+    <div id="page4" class="page">
+        <h2>mere swamiiiii 🎀🎀✨️💗</h2>
+            <div id="page4" class="page">
+            <div id="page4" class="page">
+        <h2 style="font-size: 1.4rem;">Swaamiiii💗🎀✨️</h2>
+        
+        <div class="video-container" style="width: 90%; height: auto; border: 3px solid #fff; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+            <video width="100%" height="auto" controls style="display: block;">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
+    </div>
+
+
+        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
+    </div>
+
+        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
+    </div>
+
+    <div id="page5" class="page">
+        <span class="doodle" style="top:10%; left:10%;">☁️</span>
+        <span class="doodle" style="top:20%; right:15%;">✨</span>
+        <span class="doodle" style="bottom:20%; left:15%;">🧸</span>
+        <h1> Love You Swami😈😈💗</h1>
+        <div style="font-size: 4rem; margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        let yesScale = 1;
+        let noScale = 1;
+
+        function nextPage(num) {
+            document.getElementById(`page${num}`).classList.remove('active');
+            document.getElementById(`page${num+1}`).classList.add('active');
+        }
+
+        function shrinkNo() {
+            yesScale += 0.5;
+            noScale -= 0.15;
+            document.getElementById('yesBtn').style.transform = `scale(${yesScale})`;
+            const noBtn = document.getElementById('noBtn');
+            noBtn.style.transform = `scale(${noScale})`;
+            if(noScale < 0.3) noBtn.style.opacity = '0';
+        }
+
+        function celebrateAndNext() {
+            createConfetti();
+            setTimeout(() => { nextPage(2); }, 1500); // Moves to Page 3 after hearts fall
+        }
+
+        function createConfetti() {
+            for (let i = 0; i < 40; i++) {
+                const heart = document.createElement('div');
+                heart.innerText = '❤️';
+                heart.style.cssText = `position:fixed; left:${Math.random()*100}vw; top:-5vh; font-size:${Math.random()*20+20}px; z-index:999; animation: fall ${Math.random()*2+2}s linear forwards;`;
+                document.body.appendChild(heart);
+            }
+        }
+
+        // CSS for falling hearts
+        const style = document.createElement('style');
+        style.innerHTML = `@keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }`;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
