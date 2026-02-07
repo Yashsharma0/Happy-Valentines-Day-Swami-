@@ -4,87 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Swami ❤️</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background-color: #ffdde1;
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .page {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 20px;
-            animation: fadeIn 0.8s ease;
-        }
-
+        body { background-color: #ffdde1; font-family: 'Poppins', sans-serif; overflow: hidden; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center; text-align: center; }
+        .page { display: none; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding: 20px; animation: fadeIn 0.8s ease; }
         .active { display: flex; }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
         h1 { font-family: 'Dancing Script', cursive; color: #d6334d; font-size: 2.8rem; margin-bottom: 20px; }
         h2 { font-family: 'Playfair Display', serif; color: #4a4a4a; font-size: 1.6rem; margin-bottom: 30px; }
-        
-        .btn {
-            padding: 12px 30px;
-            background: #ff4d6d;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
-            transition: 0.3s;
-            margin-top: 20px;
-        }
-
+        .btn { padding: 12px 30px; background: #ff4d6d; color: white; border: none; border-radius: 50px; font-size: 1.1rem; cursor: pointer; box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3); transition: 0.3s; margin-top: 20px; z-index: 10; }
         .buttons-container { display: flex; gap: 15px; align-items: center; justify-content: center; min-height: 150px; }
-
-        .paper {
-            background-color: #fdfbf7;
-            width: 100%;
-            max-width: 350px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            text-align: left;
-            max-height: 60vh;
-            overflow-y: auto;
-        }
-
+        .paper { background-color: #fdfbf7; width: 100%; max-width: 350px; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: left; max-height: 60vh; overflow-y: auto; }
         .paper-content { font-family: 'Playfair Display', serif; font-size: 0.9rem; color: #333; line-height: 1.5; }
-        
-        .video-container {
-            width: 100%;
-            max-width: 350px;
-            height: 220px;
-            background: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
+        .video-container { width: 90%; max-width: 350px; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border: 3px solid #fff; margin-bottom: 10px; }
         .doodle { position: absolute; font-size: 2rem; opacity: 0.5; animation: float 3s infinite ease-in-out; }
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
     </style>
@@ -121,32 +54,13 @@
     </div>
 
     <div id="page4" class="page">
-        <h2>mere swamiiiii 🎀🎀✨️💗</h2>
-            <div id="page4" class="page">
-            <div id="page4" class="page">
-        <h2 style="font-size: 1.4rem;">Swaamiiii💗🎀✨️</h2>
-        
-            <div id="page4" class="page">
         <h2 style="font-size: 1.4rem;">Swaamiiii💖🎀✨</h2>
-        
-        <div class="video-container" style="width: 90%; max-width: 350px; margin: auto;">
-            <video width="100%" height="auto" controls autoplay muted playsinline style="display: block; border-radius: 15px;">
+        <div class="video-container">
+            <video width="100%" height="auto" controls autoplay muted playsinline style="display: block;">
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-
-        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
-    </div>
-
-
-        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
-    </div>
-
-
-        <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
-    </div>
-
         <button class="btn" onclick="nextPage(4)">One Last Thing...</button>
     </div>
 
@@ -155,7 +69,7 @@
         <span class="doodle" style="top:20%; right:15%;">✨</span>
         <span class="doodle" style="bottom:20%; left:15%;">🧸</span>
         <h1> Love You Swami😈😈💗</h1>
-        <div style="font-size: 4rem; margin-top: 20px;"></div>
+        <div style="font-size: 4rem; margin-top: 20px;">💑</div>
     </div>
 
     <script>
@@ -178,7 +92,7 @@
 
         function celebrateAndNext() {
             createConfetti();
-            setTimeout(() => { nextPage(2); }, 1500); // Moves to Page 3 after hearts fall
+            setTimeout(() => { nextPage(2); }, 1500);
         }
 
         function createConfetti() {
@@ -190,10 +104,9 @@
             }
         }
 
-        // CSS for falling hearts
         const style = document.createElement('style');
         style.innerHTML = `@keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }`;
         document.head.appendChild(style);
     </script>
 </body>
-          </html>
+</html>
